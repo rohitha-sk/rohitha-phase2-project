@@ -1,0 +1,240 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Dashboard Template for Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/dashboard/">
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link href="dashboard.css" rel="stylesheet">
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=tYGmSd4LbUH8jlg6UelP_tgcBBAgbavAZMhUcIwu21Oxzt721Qg8IOV7TBO4Z0XZH5LFLhm26H5WAq-9abl_KDRKTVdcnIz7kIUqvsWJ-dw" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9nZXRib290c3RyYXAuY29tL2RvY3MvNC4wL2V4YW1wbGVzL2Rhc2hib2FyZC8"/>
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">EduX Technical University</a>
+      <input class="form-control " style="width:400px;height:30px" type="text" placeholder="Search" aria-label="Search">
+      <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <!--<a class="btn btn-warning btn-sm" href="/logout" style="color:black;font-size:15px;font-weight:bold"> Log out</a>-->
+
+        </li>
+      </ul>
+
+<a href="/" class="btn btn-primary">Go Back</a>
+         
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">
+                  <span data-feather="home"></span>
+                  Dashboard <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                 <a class="nav-link" href="#">
+                  <span data-feather="layers"></span>
+                  Function 1
+                </a>
+              </li>
+              <li class="nav-item">
+                 <a class="nav-link" href="#">
+                  <span data-feather="layers"></span>
+                   Function 2
+                </a>
+              </li>
+              <li class="nav-item">
+                 <a class="nav-link" href="#">
+                  <span data-feather="layers"></span>
+                   Function 3
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="layers"></span>
+                   Function 4
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="layers"></span>
+                   Function 5 
+                </a>
+              </li>
+            </ul>
+
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Module 2</span>
+              <a class="d-flex align-items-center text-muted" href="#">
+                <span data-feather="plus-circle"></span>
+              </a>
+            </h6>
+            <ul class="nav flex-column mb-2">
+              <li class="nav-item">
+              <a class="nav-link" href="#">
+                  <span data-feather="layers"></span>
+                   Function 1
+                </a>
+              </li>
+              <li class="nav-item">
+               <a class="nav-link" href="#">
+                  <span data-feather="layers"></span>
+                   Function 2
+                </a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="#">
+                  <span data-feather="layers"></span>
+                   Function 3
+                </a>
+              </li>
+              <li class="nav-item">
+               <a class="nav-link" href="#">
+                  <span data-feather="layers"></span>
+                   Function 4
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+         <div class="card" style="border-color: coral">
+  <div class="card-header text-center">
+    <span style="font-size:25px;font-weight:bold">Student Profile </span>
+  </div>
+  <div class="card-body">
+    <span style="color:red" class="card-title"># Profile picture does not display because of the privacy of students. If you need more privileges, please log in as a system user.  </span>
+    
+    <!--Form-->
+    <br />  <br />  
+  <form id="myForm">
+  <div class="row">
+    <div class="col">
+      <label>Email :</label>
+      <input type="text" class="form-control" id="email" name="email"  value="{{email}}" disabled>
+    </div>
+    <div class="col">
+       <label>Full Name :</label>
+      <input type="text" class="form-control"  id="full_name" name="full_name" value="{{full_name}}" disabled>
+    </div>
+  </div>
+  <br />
+   <div class="row">
+    <div class="col">
+      <label>Reg. no :</label>
+      <input type="text" class="form-control" id="reg_no" name="reg_no_index"  value="{{reg_no}}" disabled>
+    </div>
+    <div class="col">
+       <label>Current GPA :</label>
+      <input type="text" class="form-control"  id="current_gpa" name="current_gpa"  value="{{current_gpa}}" disabled>
+    </div>
+  </div>
+  <br />
+  <div class="row">
+    <div class="col">
+      <label>Degree programme :</label>
+      	<input type="text" class="form-control"  id="deg_programme" name="deg_programme"  value="{{deg_programme}}" disabled>
+    </div>
+    <div class="col">
+       <label>Contact Number :</label>
+      <input type="text" class="form-control"  id="contact_no" name="contact_no"  value="{{contact_no}}" disabled>
+    </div>
+  </div>
+  <br />
+  <div class="row">
+    <div class="col">
+      <label>Introduction :</label>
+       <textarea class="form-control" id="intro" name="intro" id="exampleFormControlTextarea1" rows="4" disabled>{{intro}}</textarea>
+    </div>
+    <div class="col">
+       <label>Skills :</label>
+      <textarea class="form-control" id="skills" name="skills" id="exampleFormControlTextarea1" rows="5" disabled>{{skills}}</textarea>
+    </div>
+  </div>
+  <br />
+   <div class="row">
+    <div class="col">
+       <a href="/" class="btn btn-primary btn-block">Back to Home page</a>
+    </div>
+  </div>
+</form>
+
+  </div>
+</div>
+        </main>
+        
+      </div>
+    </div>
+
+
+
+<!--====================================================================================-->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace()
+    </script>
+
+    <!-- Graphs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.7.1/dist/Chart.min.js"></script>
+    <script>
+      var ctx = document.getElementById("myChart");
+      var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          datasets: [{
+            data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
+            lineTension: 0,
+            backgroundColor: 'transparent',
+            borderColor: '#007bff',
+            borderWidth: 4,
+            pointBackgroundColor: '#007bff'
+          }]
+        },
+        options: {
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false
+              }
+            }]
+          },
+          legend: {
+            display: false,
+          }
+        }
+      });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

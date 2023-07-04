@@ -1,0 +1,334 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>EduX Technical University</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/dashboard/">
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link href="dashboard.css" rel="stylesheet">
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=tYGmSd4LbUH8jlg6UelP_tgcBBAgbavAZMhUcIwu21Oxzt721Qg8IOV7TBO4Z0XZH5LFLhm26H5WAq-9abl_KDRKTVdcnIz7kIUqvsWJ-dw" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9nZXRib290c3RyYXAuY29tL2RvY3MvNC4wL2V4YW1wbGVzL2Rhc2hib2FyZC8"/>
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">EduX Technical University</a>
+      <input class="form-control " style="width:400px;height:30px" type="text" placeholder="Search" aria-label="Search">
+      <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <!--<a class="btn btn-warning btn-sm" href="/logout" style="color:black;font-size:15px;font-weight:bold"> Log out</a>-->
+
+        </li>
+      </ul>
+          <div class="dropdown">
+            <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {{full_name}}
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <!--<a class="dropdown-item" href="#">History</a><hr>-->
+              <!--<a class="dropdown-item" href="#">Settings</a><hr>-->
+              <a class="dropdown-item" href="/logout"> Logout &nbsp; <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+  <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+</svg>
+              </a>
+            </div>
+          </div>
+         
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">
+                  <span data-feather="home"></span>
+                  Dashboard <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                 <a class="nav-link" href="#">
+                  <span data-feather="layers"></span>
+                  Function 1
+                </a>
+              </li>
+              <li class="nav-item">
+                 <a class="nav-link" href="#">
+                  <span data-feather="layers"></span>
+                   Function 2
+                </a>
+              </li>
+              <li class="nav-item">
+                 <a class="nav-link" href="#">
+                  <span data-feather="layers"></span>
+                   Function 3
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="layers"></span>
+                   Function 4
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="layers"></span>
+                   Function 5 
+                </a>
+              </li>
+            </ul>
+
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Module 2</span>
+              <a class="d-flex align-items-center text-muted" href="#">
+                <span data-feather="plus-circle"></span>
+              </a>
+            </h6>
+            <ul class="nav flex-column mb-2">
+              <li class="nav-item">
+              <a class="nav-link" href="#">
+                  <span data-feather="layers"></span>
+                   Function 1
+                </a>
+              </li>
+              <li class="nav-item">
+               <a class="nav-link" href="#">
+                  <span data-feather="layers"></span>
+                   Function 2
+                </a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="#">
+                  <span data-feather="layers"></span>
+                   Function 3
+                </a>
+              </li>
+              <li class="nav-item">
+               <a class="nav-link" href="#">
+                  <span data-feather="layers"></span>
+                   Function 4
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+         <div class="card" style="border-color: coral">
+  <div class="card-header text-center">
+    <span style="font-size:25px;font-weight:bold">{{full_name}}'s Profile</span>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Editable Profile</h5>
+<!-----------------------------------image upload part----------------------------------------------------------------------->
+<div class="row" >
+    <div class="col" style="width:125px">
+     <div class="card" style="width:300px;height:400px">
+  <div class="card-body" style="height:350px">
+    <img src="{{image}}" width="220" height="250" thumbnail="thumbnail.jpg" alt="Image">
+  </div>
+   <div class="card-footer">
+    <form action="/upload/{{reg_no}}" method="post" enctype="multipart/form-data">
+        <input type="file" class="form-control" style="width:280px"  value="{{image}}" id="image" name="image" />
+     
+        <div class="text-left"><br>
+      <button type="submit" value="submit" class="btn btn-primary btn-block">Update your profile Picture</button>
+        </div>
+    </form>
+  </div>
+</div>
+<!----------------------------------------------------------------------------------------------------->
+    </div>
+    <div class="col">
+<!--------------------------------- user data form-------------------------------------------------------------------->
+      <form id="myForm">
+  <div class="row">
+    <div class="col">
+      <label>Email :</label>
+      <input type="text" class="form-control" id="email" name="email"  value="{{email}}" disabled>
+    </div>
+    <div class="col">
+       <label>Full Name :</label>
+      <input type="text" class="form-control"  id="full_name" name="full_name" value="{{full_name}}">
+    </div>
+  </div>
+  <br />
+   <div class="row">
+    <div class="col">
+      <label>Reg. no :</label>
+      <input type="text" class="form-control" id="reg_no" name="reg_no_index"  value="{{reg_no}}" disabled>
+    </div>
+    <div class="col">
+       <label>Current GPA :</label>
+      <input type="text" class="form-control"  id="current_gpa" name="current_gpa"  value="{{current_gpa}}">
+    </div>
+  </div>
+  <br />
+  <div class="row">
+    <div class="col">
+      <label>Degree programme :</label>
+      	<select class="custom-select" id="deg_programme" name="deg_programme" value="{{deg_programme}}">
+            <option selected disabled >{{deg_programme}}</option>
+            <option value="Bsc computer science and engineering" >Bsc computer science and engineering</option>
+            <option value="Bsc mechanical engineering">Bsc mechanical engineering</option>
+            <option value="Bsc civil engineering">Bsc civil engineering</option>
+            <option value="Bsc electrical engineering">Bsc electrical engineering</option>
+        </select>
+    </div>
+    <div class="col">
+       <label>Contact Number :</label>
+      <input type="text" class="form-control"  id="contact_no" name="contact_no"  value="{{contact_no}}" >
+    </div>
+  </div>
+  <br />
+  <div class="row">
+    <div class="col">
+      <label>Introduction :</label>
+       <textarea class="form-control" id="intro" name="intro" id="exampleFormControlTextarea1" rows="3" >{{intro}}</textarea>
+    </div>
+    <div class="col">
+       <label>Skills :</label>
+      <textarea class="form-control" id="skills" name="skills" id="exampleFormControlTextarea1" rows="3" >{{skills}}</textarea>
+    </div>
+  </div>
+  <br />
+   <div class="row">
+    <div class="col">
+       
+       <button type="submit" class="btn btn-success btn-block">Update</button>
+    </div>
+  </div>
+ 
+</form>
+<!----------------------------------------------------------------------------------------------------->
+      </div>
+    </div>
+  </div>
+</div>
+        </main>
+        
+      </div>
+    </div>
+
+<!--==========================Catching all the form input values into Javascript variables==========================================================-->
+ 
+  <script>
+    document.getElementById('myForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+        const image = document.getElementById('image').value;
+        const email = document.getElementById('email').value;
+        const full_name = document.getElementById('full_name').value;
+        const reg_no = document.getElementById('reg_no').value;
+        const current_gpa = document.getElementById('current_gpa').value;
+        const deg_programme = document.getElementById('deg_programme').value;
+        const contact_no = document.getElementById('contact_no').value;
+        const intro = document.getElementById('intro').value;
+        const skills = document.getElementById('skills').value;
+       
+        // Get form data
+        const formData = {
+            image:image,
+            email:email,
+            full_name : full_name,
+            current_gpa : current_gpa,
+            deg_programme:deg_programme,
+            contact_no:contact_no,
+            intro:intro,
+            skills:skills,
+            
+        };
+        // Send PUT request using fetch
+        fetch('/update/'+ reg_no, {
+            method: 'PUT',
+            body:  JSON.stringify(formData),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(function(response) {
+          console.log(formData);
+            console.log('PUT request successful');
+           // alert('PUT request successful');
+              swal({
+                title: "Profile updated!",
+                text: "",
+                icon: "success",
+                button: "OK",
+              });
+        })
+        .catch(function(error) {
+            console.log('Error:', error);
+            alert('Error');
+        });
+        
+    });
+    
+ 
+
+    </script>
+<!--====================================================================================-->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace()
+    </script>
+
+    <!-- Graphs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.7.1/dist/Chart.min.js"></script>
+    <script>
+      var ctx = document.getElementById("myChart");
+      var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          datasets: [{
+            data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
+            lineTension: 0,
+            backgroundColor: 'transparent',
+            borderColor: '#007bff',
+            borderWidth: 4,
+            pointBackgroundColor: '#007bff'
+          }]
+        },
+        options: {
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false
+              }
+            }]
+          },
+          legend: {
+            display: false,
+          }
+        }
+      });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
